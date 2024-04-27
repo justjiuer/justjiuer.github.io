@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    background: url('../image/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+        .login-wrapper {
+            width: 50%;
+            height: 60%;
+            border-radius: 15px;
+            padding: 0 50px;
+            position: relative;
+            font-size: 24px;
+            border-radius: 12px;
+            background-color: rgba(255,255,255,.2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px #333;
+        }
+        .msg {
+            text-align: center;
+            height: 30%;
+            width: 65%;
+            margin: 0 auto; /* 实现居中 */
+            padding-top: 10%;
+        }
+        .icon {
+            position: relative;
+            width: 80%; 
+            height: 90%; 
+          }
+        .header {
+            margin-top: -20%;
+            text-align: center;
+            line-height: 20%;
+        }
+        .header img {
+            width: 70%;
+            height: 70%;
+        }
+        .form-wrapper{
+            margin-top: 10%;
+            height: 50%;
+        }
+        .input-item {
+            display: block;
+            width: 90%;
+            margin-bottom: 20px;
+            border: 0;
+            padding: 10px;
+            border-bottom: 1px solid rgb(128,125,125);
+            font-size: 15px;
+            outline: none;
+            font-family:"幼圆";
+            border-radius: 10px 10px 10px 10px;
+        }
+        .input-item::placeholder {
+            text-transform: uppercase;
+        }
+        .btn {
+            border-radius: 10px 10px 10px 10px;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            margin-top: 20px;
+            background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+            color: #0c0c0c;
+            font-weight: bold;
+            font-family: "幼圆"; /* 设置字体为幼圆 */
+        }
+        a {
+            text-decoration-line: none;
+            color: #abc1ee;
+        }

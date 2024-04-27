@@ -1,0 +1,195 @@
+/* 去除常见标签默认的 margin 和 padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 去除列表默认样式 */
+li {
+    list-style: none;
+}
+
+/* 设置网页统一的字体大小、行高、字体系列相关属性 */
+body {
+    width: 100%;
+    height: 100vh;
+    background: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #333;
+    z-index: 5;
+}
+
+.img {
+    height: 100%;
+}
+
+.img1 {
+    height: 100%;
+    position: fixed;
+    left: 35%;
+}
+
+.fengmian {
+    margin-top: 10px;
+    height: 25%;
+    top: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jinjiang {
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #333;
+}
+
+.container1 {
+    height: 10%;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+    height: 10%;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #333;
+    border-radius: 20px 20px 20px 20px;
+    font-family: "楷体";
+    font-weight: bold;
+}
+
+.container-prod {
+    height: 100%;
+    padding-left: 5%;
+    display: flex;
+}
+
+.container-img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.container-prod-title {
+    margin-left: 10%;
+    width: 140px;
+    height: 100%;
+    font-size: 20px;
+    white-space: nowrap;
+    padding-top: 5%;
+}
+
+.container-prod-title-information {
+    font-size: 10px;
+    padding-top: 0;
+    margin-top: 3%
+}
+
+.btn {
+    margin-top: 4.5%;
+    margin-left: 20%;
+    height: 30px;
+    background-color: rgb(247, 220, 132);
+    border-radius: 20px 20px 20px 20px;
+    font-size: 10px;
+    white-space: nowrap;
+    font-family: "楷体";
+    font-weight: bold;
+}
+
+
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav {
+    height: 8%;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px #333;
+    overflow: hidden;
+    display: flex;
+    position: fixed;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-item.active {
+    width: 40%;
+}
+
+.nav-item.active .nav__icon {
+    transform: translateY(-15px);
+}
+
+.nav-item.active .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.nav-overlay {
+    background-image: linear-gradient(to right, #ffffff, #faf2d4);
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nav__icon {
+    transition: .3s;
+}
+
+.iconfont {
+    display: block;
+    color: #000000;
+    font-size: 20px;
+    transition: 0.3s;
+    line-height: 1;
+    transform: translateY(11px);
+}
+
+.text {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    opacity: 0;
+    transition-duration: 0.3s;
+    transform: translateY(20px);
+    user-select: none;
+}
